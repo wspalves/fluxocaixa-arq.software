@@ -16,6 +16,24 @@ public class Lancamento : Entity, IAggregateRoot
 
     public string Descricao { get; private set; }
     public decimal Valor { get; private set; }
+    public DateTime DataCadastro { get; protected set; }
 
-    public DateTime DataCadastro { get; private set; }
+
+    #region Somente para facilitar o SEED em memória
+
+    protected Lancamento(string descricao, decimal valor, DateTime data)
+    {
+        Descricao = descricao;
+        Valor = valor;
+        DataCadastro = data;
+    }
+
+    public static class LancamentoFactory
+    {
+        // Somente para facilitar o SEED em memória
+        public static Lancamento NovoLancamento(string descricao, decimal valor, DateTime data) =>
+            new(descricao, valor, data);
+    }
+
+    #endregion
 }

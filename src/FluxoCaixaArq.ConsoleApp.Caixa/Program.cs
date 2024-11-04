@@ -24,5 +24,6 @@ services.AddDependencyInjection();
 var serviceProvider = services.BuildServiceProvider();
 
 // Execução
+FluxoCaixaContext.Seed(serviceProvider.GetService<FluxoCaixaContext>());
 var caixa = serviceProvider.GetService<Caixa>();
 await caixa!.IniciarCaixa();

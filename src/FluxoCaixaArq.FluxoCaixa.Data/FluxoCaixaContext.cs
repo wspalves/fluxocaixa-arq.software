@@ -24,6 +24,28 @@ public class FluxoCaixaContext(DbContextOptions<FluxoCaixaContext> options)
         base.OnModelCreating(modelBuilder);
     }
 
+    public static void Seed(FluxoCaixaContext? context)
+    {
+        context.Lancamentos.AddRange(
+            Lancamento.LancamentoFactory.NovoLancamento("Crédito seed", 35.99m, DateTime.Today.AddDays(-1)),
+            Lancamento.LancamentoFactory.NovoLancamento("Crédito seed", 159.90m, DateTime.Today.AddDays(-1)),
+            Lancamento.LancamentoFactory.NovoLancamento("Crédito seed", 450, DateTime.Today.AddDays(-1)),
+            Lancamento.LancamentoFactory.NovoLancamento("Crédito seed", 329.50m, DateTime.Today.AddDays(-1)),
+            Lancamento.LancamentoFactory.NovoLancamento("Crédito seed", 159.99m, DateTime.Today.AddDays(-1)),
+            Lancamento.LancamentoFactory.NovoLancamento("Crédito seed", 259.80m, DateTime.Today.AddDays(-1)),
+            Lancamento.LancamentoFactory.NovoLancamento("Crédito seed", 129.90m, DateTime.Today.AddDays(-1)),
+            Lancamento.LancamentoFactory.NovoLancamento("Crédito seed", 59.99m, DateTime.Today.AddDays(-1)),
+            Lancamento.LancamentoFactory.NovoLancamento("Crédito seed", 10, DateTime.Today.AddDays(-1)),
+            Lancamento.LancamentoFactory.NovoLancamento("Crédito seed", 85.50m, DateTime.Today.AddDays(-1)),
+            Lancamento.LancamentoFactory.NovoLancamento("Débito seed", -10, DateTime.Today.AddDays(-1)),
+            Lancamento.LancamentoFactory.NovoLancamento("Débito seed", -15, DateTime.Today.AddDays(-1)),
+            Lancamento.LancamentoFactory.NovoLancamento("Débito seed", -15, DateTime.Today.AddDays(-1)),
+            Lancamento.LancamentoFactory.NovoLancamento("Débito seed", -10, DateTime.Today.AddDays(-1))
+        );
+
+        context.SaveChanges();
+    }
+
     public async Task<bool> Commit()
     {
         {
