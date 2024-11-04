@@ -1,0 +1,9 @@
+2024-11-04 10:08:16.333 -03:00 [INF] Iniciando log
+2024-11-04 10:08:19.192 -03:00 [WRN] Crédito no valor de -20 não realizado. Erro: Erro ao realizar lançamento
+
+O valor do lançamento deve ser maior que zero.
+
+2024-11-04 10:14:15.423 -03:00 [INF] Iniciando log
+2024-11-04 10:14:20.824 -03:00 [INF] Crédito no valor de 200 realizado com sucesso
+2024-11-04 10:14:24.400 -03:00 [INF] Iniciando log
+2024-11-04 10:14:47.634 -03:00 [INF] Iniciando log

@@ -1,4 +1,5 @@
 using FluxoCaixaArq.ConsoleApp.Caixa.AppServices;
+using FluxoCaixaArq.ConsolidadoCaixa.Application.Queries;
 using FluxoCaixaArq.Core.Communication.Mediator;
 using FluxoCaixaArq.FluxoCaixa.Application.Commands;
 using FluxoCaixaArq.FluxoCaixa.Data;
@@ -24,5 +25,9 @@ public static class DependencyInjection
 
         // Caixa
         services.AddSingleton<CaixaService>();
+        services.AddSingleton<Caixa>();
+
+        // Consolidado
+        services.AddScoped<ILancamentoQueries, LancamentoQueries>();
     }
 }
