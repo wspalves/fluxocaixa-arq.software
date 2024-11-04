@@ -1,29 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using System.Globalization;
-using System.Reflection;
+﻿using System.Reflection;
 using FluxoCaixaArq.ConsoleApp.Caixa;
-using FluxoCaixaArq.ConsoleApp.Caixa.AppServices;
 using FluxoCaixaArq.ConsoleApp.Caixa.Setup;
-using FluxoCaixaArq.ConsolidadoCaixa.Application.Queries;
 using FluxoCaixaArq.FluxoCaixa.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Serilog;
 
 var services = new ServiceCollection();
 
-var configuration = new ConfigurationBuilder()
-    .SetBasePath(AppContext.BaseDirectory)
-    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-    .Build();
-
-var connectionString = configuration.GetConnectionString("DefaultConnection") ??
-                       throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-
 services.AddDbContext<FluxoCaixaContext>(options =>
-    options.UseSqlServer(connectionString));
+    options.UseInMemoryDatabase("FluxoCaixaDB"));
 
 services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 

@@ -1,6 +1,5 @@
 using System.Globalization;
 using FluxoCaixaArq.ConsoleApp.Caixa.AppServices;
-using FluxoCaixaArq.ConsolidadoCaixa.Application.Queries;
 using Serilog;
 
 namespace FluxoCaixaArq.ConsoleApp.Caixa;
@@ -8,12 +7,11 @@ namespace FluxoCaixaArq.ConsoleApp.Caixa;
 public class Caixa
 {
     private readonly CaixaService _caixaService;
-    private readonly ILancamentoQueries _LancamentoQueries;
 
-    public Caixa(CaixaService caixaService, ILancamentoQueries lancamentoQueries)
+
+    public Caixa(CaixaService caixaService)
     {
         _caixaService = caixaService;
-        _LancamentoQueries = lancamentoQueries;
     }
 
     public async Task IniciarCaixa()
@@ -97,7 +95,7 @@ public class Caixa
 
     async Task ConsolidadoDiaAnterior()
     {
-        var viewModel = await _LancamentoQueries.ObterConsolidadoOntemAsync();
+        var viewModel = await _caixaService.ConsolidadoDiaAnterior();
 
         Console.WriteLine($" --- Consolidado de {viewModel.DataCadastro:dd/MM/yyyy} ---");
         Console.WriteLine($"Valor Total: {viewModel.Valor.ToString("C", new CultureInfo("pt-BR"))}");
@@ -120,7 +118,7 @@ public class Caixa
             ConsolidadoData();
         }
 
-        var viewModel = await _LancamentoQueries.ObterConsolidadoPorDataAsync(date);
+        var viewModel = await _caixaService.ConsolidadoData(date);
 
         Console.WriteLine($" --- Consolidado de {viewModel.DataCadastro:dd/MM/yyyy} ---");
         Console.WriteLine($"Valor Total: {viewModel.Valor.ToString("C", new CultureInfo("pt-BR"))}");

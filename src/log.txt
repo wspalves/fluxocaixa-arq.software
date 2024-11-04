@@ -7,3 +7,24 @@ O valor do lançamento deve ser maior que zero.
 2024-11-04 10:14:20.824 -03:00 [INF] Crédito no valor de 200 realizado com sucesso
 2024-11-04 10:14:24.400 -03:00 [INF] Iniciando log
 2024-11-04 10:14:47.634 -03:00 [INF] Iniciando log
+2024-11-04 10:43:48.349 -03:00 [INF] Iniciando log
+2024-11-04 10:43:52.549 -03:00 [INF] Crédito no valor de 12313 realizado com sucesso
+2024-11-04 10:43:55.426 -03:00 [INF] Iniciando log
+2024-11-04 10:44:13.473 -03:00 [INF] Iniciando log
+2024-11-04 10:44:20.912 -03:00 [INF] Iniciando log
+2024-11-04 10:47:14.442 -03:00 [INF] Iniciando log
+2024-11-04 10:47:18.420 -03:00 [INF] Crédito no valor de 10000 realizado com sucesso
+2024-11-04 10:47:19.576 -03:00 [INF] Iniciando log
+2024-11-04 10:47:21.166 -03:00 [INF] Iniciando log
+2024-11-04 10:47:35.660 -03:00 [INF] Iniciando log
+2024-11-04 10:48:59.918 -03:00 [INF] Iniciando log
+2024-11-04 10:49:13.031 -03:00 [INF] Débito no valor de 500 realizado com sucesso
+2024-11-04 10:49:14.242 -03:00 [INF] Iniciando log
+2024-11-04 10:50:42.055 -03:00 [INF] Iniciando log
+2024-11-04 10:50:45.987 -03:00 [INF] Crédito no valor de 999 realizado com sucesso
+2024-11-04 10:50:46.867 -03:00 [INF] Iniciando log
+2024-11-04 10:50:55.421 -03:00 [INF] Iniciando log
+2024-11-04 11:00:12.943 -03:00 [INF] Iniciando log
+2024-11-04 11:00:17.848 -03:00 [INF] Crédito no valor de 333 realizado com sucesso
+2024-11-04 11:00:20.521 -03:00 [INF] Iniciando log
+2024-11-04 11:00:31.289 -03:00 [INF] Iniciando log

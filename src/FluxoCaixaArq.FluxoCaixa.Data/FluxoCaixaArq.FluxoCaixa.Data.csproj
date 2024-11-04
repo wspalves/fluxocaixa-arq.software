@@ -24,8 +24,4 @@
       <ProjectReference Include="..\FluxoCaixaArq.FluxoCaixa.Domain\FluxoCaixaArq.FluxoCaixa.Domain.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Migrations\" />
-    </ItemGroup>
-
 </Project>
