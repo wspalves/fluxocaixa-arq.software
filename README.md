@@ -1,6 +1,6 @@
 ## Fluxo de Caixa - Arquitetura de Software
 
-Desenho de Arquitetura: [Miro - Desenho Arquitetural](https://miro.com/app/board/uXjVLKx22eE=/?moveToWidget=3458764605437952643&cot=14) 
+Desenho de Arquitetura: [Miro - Desenho Arquitetural](https://miro.com/app/board/uXjVLKx22eE=/?share_link_id=482313154363)
 
 ## Descritivo
 
