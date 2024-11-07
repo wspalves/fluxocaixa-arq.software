@@ -46,14 +46,12 @@ public class LancamentoCommandHandler :
         if (message.EhValido()) return;
 
         var mensagens = new StringBuilder();
-        mensagens.AppendLine("Erro ao realizar lançamento");
-        mensagens.AppendLine();
 
         foreach (var error in message.ValidationResult.Errors)
         {
             mensagens.AppendLine(error.ErrorMessage);
         }
-        
+
         throw new DomainException(mensagens.ToString());
     }
 }

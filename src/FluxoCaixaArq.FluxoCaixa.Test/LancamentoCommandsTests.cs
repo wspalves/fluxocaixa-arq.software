@@ -47,7 +47,7 @@ public class LancamentoCommandsTests
             await handler.Handle(command, new CancellationToken()));
 
         // Assert
-        Assert.Equal("Erro ao realizar lançamento\r\n\r\nO valor do lançamento deve ser maior que zero.\r\n",
+        Assert.Equal("O valor do lançamento deve ser maior que zero.",
             exec.Message);
     }
     
@@ -63,7 +63,7 @@ public class LancamentoCommandsTests
             await handler.Handle(command, new CancellationToken()));
 
         // Assert
-        Assert.Equal("Erro ao realizar lançamento\r\n\r\nO valor do lançamento deve ser maior que zero.\r\n",
+        Assert.Equal("O valor do lançamento deve ser maior que zero.",
             exec.Message);
     }
 }

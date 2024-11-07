@@ -13,11 +13,7 @@ services.AddDbContext<FluxoCaixaContext>(options =>
 
 services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
-Serilog.Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Debug()
-    .WriteTo.File(Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, @"..\..\..\..\")) + "log.txt",
-        outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
-    .CreateLogger();
+
 
 services.AddDependencyInjection();
 
@@ -25,5 +21,5 @@ var serviceProvider = services.BuildServiceProvider();
 
 // Execução
 FluxoCaixaContext.Seed(serviceProvider.GetService<FluxoCaixaContext>());
-var caixa = serviceProvider.GetService<Caixa>();
-await caixa!.IniciarCaixa();
+// var caixa = serviceProvider.GetService<Caixa>();
+// await caixa!.IniciarCaixa();

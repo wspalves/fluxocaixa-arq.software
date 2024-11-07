@@ -1,21 +1,17 @@
-using FluxoCaixaArq.ConsolidadoCaixa.Application.Queries;
-using FluxoCaixaArq.ConsolidadoCaixa.Application.Queries.ViewModel;
 using FluxoCaixaArq.Core.Communication.Mediator;
 using FluxoCaixaArq.Core.DomainObjects;
 using FluxoCaixaArq.FluxoCaixa.Application.Commands;
 using Serilog;
 
-namespace FluxoCaixaArq.ConsoleApp.Caixa.AppServices;
+namespace FluxoCaixaArq.FluxoCaixa.API.AppServices;
 
 public class CaixaService
 {
     private readonly IMediatorHandler _mediatorHandler;
-    private readonly ILancamentoQueries _LancamentoQueries;
-
-    public CaixaService(IMediatorHandler mediatorHandler, ILancamentoQueries lancamentoQueries)
+    
+    public CaixaService(IMediatorHandler mediatorHandler)
     {
         _mediatorHandler = mediatorHandler;
-        _LancamentoQueries = lancamentoQueries;
     }
 
     public async Task<bool> Creditar(decimal valor)
@@ -55,15 +51,5 @@ public class CaixaService
             Log.Warning("Débito no valor de {valor} não realizado. Erro: {erro}", valor, ex.Message);
             return false;
         }
-    }
-
-    public async Task<LancamentoViewModel> ConsolidadoDiaAnterior()
-    {
-        return await _LancamentoQueries.ObterConsolidadoOntemAsync();
-    }
-
-    public async Task<LancamentoViewModel> ConsolidadoData(DateTime data)
-    {
-        return await _LancamentoQueries.ObterConsolidadoPorDataAsync(data);
     }
 }
