@@ -1,7 +1,4 @@
-using FluxoCaixaArq.Core.Communication.Mediator;
 using FluxoCaixaArq.Core.DomainObjects;
-using FluxoCaixaArq.FluxoCaixa.Application.Commands;
-using Serilog;
 
 namespace FluxoCaixaArq.FluxoCaixa.API.AppServices;
 

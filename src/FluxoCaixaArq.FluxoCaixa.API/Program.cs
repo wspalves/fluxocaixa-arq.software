@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder
@@ -10,9 +12,11 @@ var app = builder.Build();
 
 app.UseAPI();
 
-app.MapPost("v1/creditar", async (IMediatorHandler _mediatorHandler, decimal valor) =>
+#region POST Creditar
+
+app.MapPost("v1/creditar", async (IMediatorHandler _mediatorHandler, [FromBody] LancamentoViewModel body) =>
     {
-        var command = new CreditarLancamentoCommand("Crédito de valor", valor);
+        var command = new CreditarLancamentoCommand("Crédito de valor", body.Valor);
         if (await _mediatorHandler.EnviarComando(command))
             return Results.Ok();
 
@@ -21,9 +25,13 @@ app.MapPost("v1/creditar", async (IMediatorHandler _mediatorHandler, decimal val
     .WithName("PostCreditar")
     .WithOpenApi();
 
-app.MapPost("v1/debitar", async (IMediatorHandler _mediatorHandler, decimal valor) =>
+#endregion
+
+#region POST Debitar
+
+app.MapPost("v1/debitar", async (IMediatorHandler _mediatorHandler, [FromBody] LancamentoViewModel body) =>
     {
-        var command = new DebitarLancamentoCommand("Débito de valor", valor);
+        var command = new DebitarLancamentoCommand("Débito de valor", body.Valor);
         if (await _mediatorHandler.EnviarComando(command))
             return Results.Ok();
 
@@ -31,6 +39,8 @@ app.MapPost("v1/debitar", async (IMediatorHandler _mediatorHandler, decimal valo
     })
     .WithName("PostDebitar")
     .WithOpenApi();
+
+#endregion
 
 app.Run();
 Log.CloseAndFlush();

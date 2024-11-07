@@ -1,9 +1,0 @@
-@FluxoCaixaArq.FluxoCaixa.API_HostAddress = http://localhost:5189
-
-POST {{FluxoCaixaArq.FluxoCaixa.API_HostAddress}}/v1/creditar/
-Accept: application/json
-
-POST {{FluxoCaixaArq.FluxoCaixa.API_HostAddress}}/v1/debitar/
-Accept: application/json
-
-###

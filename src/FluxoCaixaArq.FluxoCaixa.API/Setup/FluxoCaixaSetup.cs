@@ -1,15 +1,12 @@
-using FluxoCaixaArq.Core.Communication.Mediator;
-using FluxoCaixaArq.FluxoCaixa.API.AppServices;
-using FluxoCaixaArq.FluxoCaixa.Application.Commands;
 using FluxoCaixaArq.FluxoCaixa.Data;
 using FluxoCaixaArq.FluxoCaixa.Data.Repository;
 using FluxoCaixaArq.FluxoCaixa.Domain.Interfaces;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace FluxoCaixaArq.FluxoCaixa.API.Extensions;
+namespace FluxoCaixaArq.FluxoCaixa.API.Setup;
 
-public static class FluxoCaixaExtensions
+public static class FluxoCaixaSetup
 {
     public static WebApplicationBuilder AddDBContext(this WebApplicationBuilder builder,
         IConfiguration configuration)

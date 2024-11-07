@@ -11,6 +11,7 @@ public class ExceptionMiddleware(RequestDelegate next)
         try
         {
             await next(httpContext);
+            Log.Information("Request was processed successfully");
         }
         catch (DomainException ex)
         {

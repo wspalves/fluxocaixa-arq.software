@@ -20,6 +20,6 @@ public static class DependencyInjection
         // services.AddSingleton<Caixa>();
 
         // Consolidado
-        services.AddScoped<ILancamentoQueries, LancamentoQueries>();
+        services.AddScoped<IConsolidadoQueries, ConsolidadoQueries>();
     }
 }

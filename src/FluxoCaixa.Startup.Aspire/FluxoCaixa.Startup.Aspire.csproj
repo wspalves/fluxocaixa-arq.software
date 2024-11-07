@@ -13,4 +13,9 @@
         <PackageReference Include="Aspire.Hosting.AppHost" Version="8.1.0"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\FluxoCaixaArq.ConsolidadoCaixa.API\FluxoCaixaArq.ConsolidadoCaixa.API.csproj" />
+      <ProjectReference Include="..\FluxoCaixaArq.FluxoCaixa.API\FluxoCaixaArq.FluxoCaixa.API.csproj" />
+    </ItemGroup>
+
 </Project>

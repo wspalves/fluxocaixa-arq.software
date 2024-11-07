@@ -1,6 +1,6 @@
-namespace FluxoCaixaArq.FluxoCaixa.API.Extensions;
+namespace FluxoCaixaArq.ConsolidadoCaixa.API.Setup;
 
-public static class AppExtensions
+public static class AppSetup
 {
     public static WebApplication UseAPI(this WebApplication app)
     {
@@ -9,10 +9,11 @@ public static class AppExtensions
         if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
-            app.UseSwaggerUI();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+            });
         }
-
-        app.UseMiddleware<ExceptionMiddleware>();
 
         return app;
     }

@@ -1,6 +1,6 @@
-namespace FluxoCaixaArq.FluxoCaixa.API.Extensions;
+namespace FluxoCaixaArq.FluxoCaixa.API.Setup;
 
-public static class LogExtensions
+public static class LogSetup
 {
     public static WebApplicationBuilder AddLog(this WebApplicationBuilder builder)
     {

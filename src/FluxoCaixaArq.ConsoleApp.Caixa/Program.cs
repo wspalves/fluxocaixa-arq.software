@@ -13,8 +13,6 @@ services.AddDbContext<FluxoCaixaContext>(options =>
 
 services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 
-
-
 services.AddDependencyInjection();
 
 var serviceProvider = services.BuildServiceProvider();
