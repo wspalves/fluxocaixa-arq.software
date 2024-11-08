@@ -1,38 +1,39 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleApps", "ConsoleApps", "{726B01C7-5BA6-48FE-AF5B-7EC06984D07B}"
-EndProject
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E0CACC20-BC96-483F-8116-85EDBFC24A7A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FluxoCaixa", "FluxoCaixa", "{C59CC7F7-EDBB-42FC-9F3E-10DFDAF4092E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{43C61183-A7DB-47EB-BC74-B636B37A687A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxoCaixaArq.FluxoCaixa.Domain", "src\FluxoCaixaArq.FluxoCaixa.Domain\FluxoCaixaArq.FluxoCaixa.Domain.csproj", "{51E9E5E3-D045-4C47-BEEC-52C2A7A1F0C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluxoCaixaArq.FluxoCaixa.Domain", "src\FluxoCaixaArq.FluxoCaixa.Domain\FluxoCaixaArq.FluxoCaixa.Domain.csproj", "{51E9E5E3-D045-4C47-BEEC-52C2A7A1F0C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxoCaixaArq.FluxoCaixa.Application", "src\FluxoCaixaArq.FluxoCaixa.Application\FluxoCaixaArq.FluxoCaixa.Application.csproj", "{E8C78C57-5642-4465-B197-376893EA71A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluxoCaixaArq.FluxoCaixa.Application", "src\FluxoCaixaArq.FluxoCaixa.Application\FluxoCaixaArq.FluxoCaixa.Application.csproj", "{E8C78C57-5642-4465-B197-376893EA71A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxoCaixaArq.Core", "src\FluxoCaixaArq.Core\FluxoCaixaArq.Core.csproj", "{5AFBDC13-07AA-4AF5-972A-9E70909224C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluxoCaixaArq.Core", "src\FluxoCaixaArq.Core\FluxoCaixaArq.Core.csproj", "{5AFBDC13-07AA-4AF5-972A-9E70909224C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxoCaixaArq.FluxoCaixa.Data", "src\FluxoCaixaArq.FluxoCaixa.Data\FluxoCaixaArq.FluxoCaixa.Data.csproj", "{4F3E42AF-B47C-433E-A091-09BED3FEE7C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluxoCaixaArq.FluxoCaixa.Data", "src\FluxoCaixaArq.FluxoCaixa.Data\FluxoCaixaArq.FluxoCaixa.Data.csproj", "{4F3E42AF-B47C-433E-A091-09BED3FEE7C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxoCaixaArq.ConsoleApp.Caixa", "src\FluxoCaixaArq.ConsoleApp.Caixa\FluxoCaixaArq.ConsoleApp.Caixa.csproj", "{47D6801E-6E71-4FC9-9584-474426DF9E0A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxoCaixaArq.FluxoCaixa.Test", "src\FluxoCaixaArq.FluxoCaixa.Test\FluxoCaixaArq.FluxoCaixa.Test.csproj", "{F1F72C66-AC9E-465B-BFA8-6E20BF2E3EFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluxoCaixaArq.FluxoCaixa.Test", "src\FluxoCaixaArq.FluxoCaixa.Test\FluxoCaixaArq.FluxoCaixa.Test.csproj", "{F1F72C66-AC9E-465B-BFA8-6E20BF2E3EFB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsolidadoCaixa", "ConsolidadoCaixa", "{84890072-7C65-4B5B-BDAC-F6ACEFA3FDD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxoCaixaArq.ConsolidadoCaixa.Application", "src\FluxoCaixaArq.ConsolidadoCaixa.Application\FluxoCaixaArq.ConsolidadoCaixa.Application.csproj", "{DB3DC618-34CD-4F10-A606-268BFFDDC97A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluxoCaixaArq.ConsolidadoCaixa.Application", "src\FluxoCaixaArq.ConsolidadoCaixa.Application\FluxoCaixaArq.ConsolidadoCaixa.Application.csproj", "{DB3DC618-34CD-4F10-A606-268BFFDDC97A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Startup", "Startup", "{DC018191-691A-42E1-9156-F4825684EED9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxoCaixa.Startup.Aspire", "src\FluxoCaixa.Startup.Aspire\FluxoCaixa.Startup.Aspire.csproj", "{CB3828C1-DC62-4A9C-87B0-23C8E0CF6E2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluxoCaixaArq.FluxoCaixa.API", "src\FluxoCaixaArq.FluxoCaixa.API\FluxoCaixaArq.FluxoCaixa.API.csproj", "{045C69DE-3CA1-424B-8F92-B0CA13582729}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxoCaixaArq.FluxoCaixa.API", "src\FluxoCaixaArq.FluxoCaixa.API\FluxoCaixaArq.FluxoCaixa.API.csproj", "{045C69DE-3CA1-424B-8F92-B0CA13582729}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluxoCaixaArq.ConsolidadoCaixa.API", "src\FluxoCaixaArq.ConsolidadoCaixa.API\FluxoCaixaArq.ConsolidadoCaixa.API.csproj", "{0F985461-E229-4186-B5A2-EB9E8B001585}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxoCaixaArq.ConsolidadoCaixa.API", "src\FluxoCaixaArq.ConsolidadoCaixa.API\FluxoCaixaArq.ConsolidadoCaixa.API.csproj", "{0F985461-E229-4186-B5A2-EB9E8B001585}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluxoCaixaArq.ConsolidadoCaixa.Data", "src\FluxoCaixaArq.ConsolidadoCaixa.Data\FluxoCaixaArq.ConsolidadoCaixa.Data.csproj", "{E54B1281-FDA0-425F-888B-E3CEB63B42CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluxoCaixaArq.ConsolidadoCaixa.Data", "src\FluxoCaixaArq.ConsolidadoCaixa.Data\FluxoCaixaArq.ConsolidadoCaixa.Data.csproj", "{E54B1281-FDA0-425F-888B-E3CEB63B42CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluxoCaixaArq.Aspire.Host", "src\FluxoCaixaArq.Aspire.Host\FluxoCaixaArq.Aspire.Host.csproj", "{5DB75413-CA66-48AB-9A24-F12D86C9E06D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluxoCaixaArq.Aspire.Migration", "src\FluxoCaixaArq.Aspire.Migration\FluxoCaixaArq.Aspire.Migration.csproj", "{82572623-CD39-449D-AAF6-E009E3FB3C3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,10 +57,6 @@ Global
 		{4F3E42AF-B47C-433E-A091-09BED3FEE7C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F3E42AF-B47C-433E-A091-09BED3FEE7C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F3E42AF-B47C-433E-A091-09BED3FEE7C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{47D6801E-6E71-4FC9-9584-474426DF9E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{47D6801E-6E71-4FC9-9584-474426DF9E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{47D6801E-6E71-4FC9-9584-474426DF9E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{47D6801E-6E71-4FC9-9584-474426DF9E0A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F1F72C66-AC9E-465B-BFA8-6E20BF2E3EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F1F72C66-AC9E-465B-BFA8-6E20BF2E3EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1F72C66-AC9E-465B-BFA8-6E20BF2E3EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -68,10 +65,6 @@ Global
 		{DB3DC618-34CD-4F10-A606-268BFFDDC97A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB3DC618-34CD-4F10-A606-268BFFDDC97A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB3DC618-34CD-4F10-A606-268BFFDDC97A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CB3828C1-DC62-4A9C-87B0-23C8E0CF6E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CB3828C1-DC62-4A9C-87B0-23C8E0CF6E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CB3828C1-DC62-4A9C-87B0-23C8E0CF6E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CB3828C1-DC62-4A9C-87B0-23C8E0CF6E2D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{045C69DE-3CA1-424B-8F92-B0CA13582729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{045C69DE-3CA1-424B-8F92-B0CA13582729}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{045C69DE-3CA1-424B-8F92-B0CA13582729}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -84,6 +77,17 @@ Global
 		{E54B1281-FDA0-425F-888B-E3CEB63B42CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E54B1281-FDA0-425F-888B-E3CEB63B42CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E54B1281-FDA0-425F-888B-E3CEB63B42CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DB75413-CA66-48AB-9A24-F12D86C9E06D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DB75413-CA66-48AB-9A24-F12D86C9E06D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DB75413-CA66-48AB-9A24-F12D86C9E06D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DB75413-CA66-48AB-9A24-F12D86C9E06D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82572623-CD39-449D-AAF6-E009E3FB3C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82572623-CD39-449D-AAF6-E009E3FB3C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82572623-CD39-449D-AAF6-E009E3FB3C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82572623-CD39-449D-AAF6-E009E3FB3C3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C59CC7F7-EDBB-42FC-9F3E-10DFDAF4092E} = {E0CACC20-BC96-483F-8116-85EDBFC24A7A}
@@ -92,13 +96,16 @@ Global
 		{E8C78C57-5642-4465-B197-376893EA71A5} = {C59CC7F7-EDBB-42FC-9F3E-10DFDAF4092E}
 		{5AFBDC13-07AA-4AF5-972A-9E70909224C4} = {43C61183-A7DB-47EB-BC74-B636B37A687A}
 		{4F3E42AF-B47C-433E-A091-09BED3FEE7C7} = {C59CC7F7-EDBB-42FC-9F3E-10DFDAF4092E}
-		{47D6801E-6E71-4FC9-9584-474426DF9E0A} = {726B01C7-5BA6-48FE-AF5B-7EC06984D07B}
 		{F1F72C66-AC9E-465B-BFA8-6E20BF2E3EFB} = {C59CC7F7-EDBB-42FC-9F3E-10DFDAF4092E}
 		{84890072-7C65-4B5B-BDAC-F6ACEFA3FDD9} = {E0CACC20-BC96-483F-8116-85EDBFC24A7A}
 		{DB3DC618-34CD-4F10-A606-268BFFDDC97A} = {84890072-7C65-4B5B-BDAC-F6ACEFA3FDD9}
-		{CB3828C1-DC62-4A9C-87B0-23C8E0CF6E2D} = {DC018191-691A-42E1-9156-F4825684EED9}
 		{045C69DE-3CA1-424B-8F92-B0CA13582729} = {C59CC7F7-EDBB-42FC-9F3E-10DFDAF4092E}
 		{0F985461-E229-4186-B5A2-EB9E8B001585} = {84890072-7C65-4B5B-BDAC-F6ACEFA3FDD9}
 		{E54B1281-FDA0-425F-888B-E3CEB63B42CE} = {84890072-7C65-4B5B-BDAC-F6ACEFA3FDD9}
+		{5DB75413-CA66-48AB-9A24-F12D86C9E06D} = {DC018191-691A-42E1-9156-F4825684EED9}
+		{82572623-CD39-449D-AAF6-E009E3FB3C3D} = {DC018191-691A-42E1-9156-F4825684EED9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53D4831F-9B55-4925-8E83-E2FE23533092}
 	EndGlobalSection
 EndGlobal

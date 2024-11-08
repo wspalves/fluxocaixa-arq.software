@@ -10,10 +10,16 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Aspire.Hosting.AppHost" Version="8.1.0"/>
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="8.1.0" />
+        <PackageReference Include="Aspire.Hosting.SqlServer" Version="8.2.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\FluxoCaixaArq.Aspire.Migration\FluxoCaixaArq.Aspire.Migration.csproj" />
       <ProjectReference Include="..\FluxoCaixaArq.ConsolidadoCaixa.API\FluxoCaixaArq.ConsolidadoCaixa.API.csproj" />
       <ProjectReference Include="..\FluxoCaixaArq.FluxoCaixa.API\FluxoCaixaArq.FluxoCaixa.API.csproj" />
     </ItemGroup>

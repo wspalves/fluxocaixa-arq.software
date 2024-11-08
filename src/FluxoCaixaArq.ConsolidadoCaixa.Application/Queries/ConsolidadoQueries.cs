@@ -11,17 +11,6 @@ public class ConsolidadoQueries : IConsolidadoQueries
     {
         _consolidadoRepository = consolidadoRepository;
     }
-
-    public async Task<ConsolidadoViewModel> ObterConsolidadoOntemAsync()
-    {
-        var consolidado = await _consolidadoRepository.ObterConsolidadoOntemAsync();
-        if (consolidado == null)
-            return new ConsolidadoViewModel
-                { Valor = 0, DataCadastro = DateTime.Now.Date.AddDays(-1), QuantidadeLancamentos = 0 };
-
-        return consolidado;
-    }
-
     public async Task<ConsolidadoViewModel> ObterConsolidadoPorDataAsync(DateTime data)
     {
         var consolidado = await _consolidadoRepository.ObterConsolidadoPorDataAsync(data);

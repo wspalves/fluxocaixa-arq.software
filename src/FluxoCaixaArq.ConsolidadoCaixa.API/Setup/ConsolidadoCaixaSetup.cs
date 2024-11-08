@@ -11,7 +11,7 @@ public static class ConsolidadoCaixaSetup
         //Queries
         builder.Services.AddScoped<IConsolidadoQueries, ConsolidadoQueries>();
         builder.Services.AddScoped<IConsolidadoRepository>(x =>
-            new ConsolidadoRepository(builder.Configuration.GetConnectionString("DefaultConnection") ??
+            new ConsolidadoRepository(builder.Configuration.GetConnectionString("FluxoCaixaDB") ??
                                       throw new InvalidOperationException("Null Connection String!")));
 
         return builder;

@@ -2,7 +2,6 @@ using FluxoCaixaArq.FluxoCaixa.Data;
 using FluxoCaixaArq.FluxoCaixa.Data.Repository;
 using FluxoCaixaArq.FluxoCaixa.Domain.Interfaces;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
 namespace FluxoCaixaArq.FluxoCaixa.API.Setup;
 
@@ -11,8 +10,10 @@ public static class FluxoCaixaSetup
     public static WebApplicationBuilder AddDBContext(this WebApplicationBuilder builder,
         IConfiguration configuration)
     {
-        builder.Services.AddDbContext<FluxoCaixaContext>(options =>
-            options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+        builder.AddSqlServerDbContext<FluxoCaixaContext>("FluxoCaixaDB");
+
+        //builder.Services.AddDbContext<FluxoCaixaContext>(options =>
+        //    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
         return builder;
     }

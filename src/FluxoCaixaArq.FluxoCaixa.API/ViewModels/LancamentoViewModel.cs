@@ -1,6 +1,6 @@
 namespace FluxoCaixaArq.FluxoCaixa.API.ViewModels;
 
-public class LancamentoViewModel
+public record LancamentoViewModel
 {
     public decimal Valor { get; set; }
 }

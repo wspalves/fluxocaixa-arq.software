@@ -1,4 +1,3 @@
-using System.ComponentModel.DataAnnotations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,7 +17,7 @@ app.MapPost("v1/creditar", async (IMediatorHandler _mediatorHandler, [FromBody] 
     {
         var command = new CreditarLancamentoCommand("Crédito de valor", body.Valor);
         if (await _mediatorHandler.EnviarComando(command))
-            return Results.Ok();
+            return Results.Created();
 
         return Results.BadRequest();
     })
@@ -33,7 +32,7 @@ app.MapPost("v1/debitar", async (IMediatorHandler _mediatorHandler, [FromBody] L
     {
         var command = new DebitarLancamentoCommand("Débito de valor", body.Valor);
         if (await _mediatorHandler.EnviarComando(command))
-            return Results.Ok();
+            return Results.Created();
 
         return Results.BadRequest();
     })

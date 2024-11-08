@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FluxoCaixaArq.FluxoCaixa.Data.Migrations
 {
     [DbContext(typeof(FluxoCaixaContext))]
-    [Migration("20241107142755_Initial")]
+    [Migration("20241108015713_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
