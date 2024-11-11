@@ -137,6 +137,9 @@ dotnet test
 - Ao executar a aplicação, é realizado um seed com créditos e débitos para o dia anterior a fim de possibilitar a execução do **GET** do Consolidado do dia anterior.
 - Os testes unitários escritos (usando xUnit) têm o objetivo de apresentar conceitos como AAA (Arrange, Act, Assert) e Mock (com a biblioteca Moq) e não para ter alto percentual de cobertura de teste.
 - Os logs da aplicação (usando Serilog) não estão estruturados e foram incluídos somente para abordar o conceito, possibilitando evolução do mesmo no futuro.
+- Devido a aplicação não realizar requisições REST, não foi utilizado bibliotecas como:
+  - Refit para simplificar e organizar requisições REST.
+  - Polly para implementar patterns como circuit breaker ou abordagens como retry e timeout.
 - Até o momento, não foi desenvolvido interface visual para interação com os recursos da aplicação. Toda interação deve ser feita através de requisições REST.
 - Até o momento, não foi implementado no Aspire funcionalidades como OpenTelemetry.
 - Até o momento, não foi implementado autenticação na aplicação.
